@@ -1,0 +1,60 @@
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background: #341d6c;
+    background-image: radial-gradient(ellipse farthest-corner, #111, #000);
+    position: relative;
+
+    &-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 100vw;
+
+        img {
+            height: 100%;
+            width: auto;
+            opacity: .25;
+        }
+    }
+
+    &-content {
+        height: 100%;
+
+        .column {
+            &--1 {
+                // background-color: olivedrab;
+            }
+
+            &--2 {
+                // background-color: orchid;
+            }
+
+            &--3 {
+                // background-color: papayawhip;
+            }
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .srijan-logo {
+                // background-color: olivedrab;
+                height: 350px;
+                width: auto;
+
+                &-ju {
+                    // background-color: red;
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
