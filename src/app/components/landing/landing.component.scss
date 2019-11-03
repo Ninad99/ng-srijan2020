@@ -14,7 +14,8 @@
         width: 100vw;
 
         img {
-            height: 100%;
+            overflow: hidden;
+            height: auto;
             width: auto;
             opacity: .25;
         }
@@ -48,6 +49,11 @@
                 // background-color: olivedrab;
                 height: 350px;
                 width: auto;
+
+                @media screen and (max-width: 600px) {
+                    height: 150px;
+                    width: auto;
+                }
 
                 &-ju {
                     // background-color: red;
