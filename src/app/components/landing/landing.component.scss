@@ -5,6 +5,10 @@
     background-image: radial-gradient(ellipse farthest-corner, #111, #000);
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        background-color: #000;
+    }
+
     &-background {
         position: absolute;
         top: 50%;
@@ -20,11 +24,13 @@
             opacity: .25;
 
             @media screen and (max-width: 900px) {
-                height: 70%;
+                height: auto;
+                width: 100%;
             }
 
             @media screen and (max-width: 600px) {
-                height: 50%;
+                height: auto;
+                width: 100%;
             }
         }
     }
