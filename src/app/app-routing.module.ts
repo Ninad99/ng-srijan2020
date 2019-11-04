@@ -6,14 +6,16 @@ import { EventsComponent } from './components/events/events.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { TeamComponent } from './components/team/team.component';
+import { SponsorsComponent } from './components/sponsors/sponsors.component';
 
 const routes: Routes = [
-  { path: 'about', component: AboutComponent },
+  // { path: 'about', component: AboutComponent },
   { path: 'events', component: EventsComponent },
   { path: 'workshops', component: WorkshopComponent },
-  { path: 'gallery', component: GalleryComponent },
+  // { path: 'gallery', component: GalleryComponent },
   { path: 'team', component: TeamComponent },
-  { path: '', component: LandingComponent }
+  { path: 'sponsors', component: SponsorsComponent},
+  { path: '', component: LandingComponent },
 ];
 
 @NgModule({

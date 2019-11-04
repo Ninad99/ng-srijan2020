@@ -11,6 +11,7 @@ import { EventsComponent } from './components/events/events.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { TeamComponent } from './components/team/team.component';
+import { SponsorsComponent } from './components/sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TeamComponent } from './components/team/team.component';
     EventsComponent,
     WorkshopComponent,
     GalleryComponent,
-    TeamComponent
+    TeamComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,
