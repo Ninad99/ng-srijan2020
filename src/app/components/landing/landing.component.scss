@@ -37,13 +37,21 @@
                 background-color: olivedrab;
             }
 
-            &--2 {
-                // background-color: orchid;
-            }
+            // &--2 {
+            //     // background-color: orchid;
+            // }
 
             &--3 {
                 color: #eaeaea;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 // background-color: papayawhip;
+
+                @media screen and (max-width: 768px) {
+                    height: auto;
+                }
             }
         }
 
@@ -98,3 +106,131 @@
         }
     }
 }
+
+.footer {
+    
+        // display: inline-block;
+        // margin-top: 10px;;
+        display: flex;
+        // justify-content: space-around;
+        position:absolute;
+        // top:50%;
+        // margin-top: 10px;
+        bottom: 0%;
+        left:50%;
+        -ms-transform:translate(-50%,-50%);
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+
+        &--link {
+            color:#fff;
+            // background; 
+            // border: solid 1px #fff;
+            border-radius:4px;
+            text-align:center;
+            text-decoration:none;
+            font-family:fontawesome;
+            position: relative;
+            display: inline-block;
+            font-size: 1.3rem;
+            width:50px;
+            height:40px;
+            padding-top:12px;
+            margin:0 2px;
+            -o-transition:all .5s;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            -webkit-font-smoothing: antialiased;
+
+            @media screen and (max-width: 770px) {
+                margin-right: 1rem;
+                height: 35px;
+                width: auto;
+            }
+             
+        }
+
+          &--link:nth-of-type(1):hover {
+            // content:'\f39e';
+            // background-color: green;
+            // transition: all .5s;
+            color: #3b5998;
+            font-size: 1.4rem;
+        }
+
+          &--link:nth-child(2):hover {
+            // content:'\f39e';
+            // background-color: green;
+            // color: #3b5998;
+            color: #1da1f2;
+            font-size: 1.4rem;
+        }
+          &--link:nth-child(3):hover {
+            // content:'\f39e';
+            // background-color: green;
+            // color: #3b5998;
+            color: #e1306c;
+            font-size: 1.4rem;
+        }
+          &--link:nth-child(4):hover {
+            // content:'\f39e';
+            // background-color: green;
+            // color: #3b5998;
+            color: #ffa930;
+            font-size: 1.4rem;
+        }
+
+            // .social-icon {
+            //     color:#666;
+            //     position:absolute;
+            //     font-family:sans-serif;
+            //     bottom:0;
+            //     left:-25px;
+            //     right:-25px;
+            //     padding:5px 7px;
+            //     z-index:-1;
+            //     font-size:14px;
+            //     border-radius:2px;
+            //     background:#fff;
+            //     visibility:hidden;
+            //     opacity:0;
+            //     -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            //     -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            //     -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            //     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            // }
+
+            // .social-icon:before {
+            //     content:'';
+            //     width: 0; 
+            //     height: 0; 
+            //     border-left: 5px solid transparent;
+            //     border-right: 5px solid transparent;
+            //     border-top: 5px solid #fff;
+            //     position:absolute;
+            //     bottom:-5px;
+            //     left:40px;
+            // }
+
+
+        
+
+        // &--link:hover span {
+        //     bottom:50px;
+        //     visibility:visible;
+        //     opacity:1;
+        // }
+
+        // &--link:nth-of-type(1):before {
+        //     content:'\f39e';
+        // }
+        // &--link:nth-of-type(2):before {
+        //     content:'\f09a';
+        // }
+        // &--link:nth-of-type(3):before {
+        //     content:'\f09a';
+        // }
+      
+}
+
