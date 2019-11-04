@@ -101,7 +101,7 @@
 
             &--2 {
                 // background-color: orange;
-                // background-color: transparent;
+                background-color: transparent;
             }
 
             &--3 {
@@ -117,6 +117,16 @@
 
                 @media screen and (max-width: 992px) {
                     height: auto;
+                }
+
+                .srijan-title-about {
+                    font-size: 2.25rem;
+                    color: transparent;
+                    -webkit-text-stroke: 1px #AAA;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 .nav-buttons {
