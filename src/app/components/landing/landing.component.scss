@@ -29,17 +29,49 @@
         }
     }
 
+    &-nav {
+        // background-color: palegreen;
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        @media screen and (max-width: 992px) {
+            visibility: hidden;
+        }
+
+        &--item {
+            // background-color: palevioletred;
+            display: block;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ddd;
+            transition: all .3s ease-out;
+            
+            &:hover {
+                background-color: #ddd;
+                color: #222;
+            }
+        }
+    }
+
     &-content {
         height: 100%;
 
         .column {
             &--1 {
-                background-color: olivedrab;
+                // background-color: olivedrab;
+                background-color: transparent;
             }
 
             // &--2 {
             //     // background-color: orchid;
             // }
+            &--2 {
+                // background-color: orchid;
+                background-color: transparent;
+            }
 
             &--3 {
                 color: #eaeaea;
@@ -52,7 +84,9 @@
                 @media screen and (max-width: 768px) {
                     height: auto;
                 }
+           
             }
+            
         }
 
         .logo-wrapper {
