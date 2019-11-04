@@ -29,17 +29,45 @@
         }
     }
 
+    &-nav {
+        // background-color: palegreen;
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        @media screen and (max-width: 992px) {
+            visibility: hidden;
+        }
+
+        &--item {
+            // background-color: palevioletred;
+            display: block;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ddd;
+            transition: all .3s ease-out;
+            
+            &:hover {
+                background-color: #ddd;
+                color: #222;
+            }
+        }
+    }
+
     &-content {
         height: 100%;
 
         .column {
             &--1 {
-                background-color: olivedrab;
+                // background-color: olivedrab;
+                background-color: transparent;
             }
 
-            // &--2 {
-            //     // background-color: orchid;
-            // }
+            &--2 {
+//                 background-color: orchid;
+            }
 
             &--3 {
                 color: #eaeaea;
@@ -181,56 +209,5 @@
             font-size: 1.4rem;
         }
 
-            // .social-icon {
-            //     color:#666;
-            //     position:absolute;
-            //     font-family:sans-serif;
-            //     bottom:0;
-            //     left:-25px;
-            //     right:-25px;
-            //     padding:5px 7px;
-            //     z-index:-1;
-            //     font-size:14px;
-            //     border-radius:2px;
-            //     background:#fff;
-            //     visibility:hidden;
-            //     opacity:0;
-            //     -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            //     -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            //     -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            //     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            // }
-
-            // .social-icon:before {
-            //     content:'';
-            //     width: 0; 
-            //     height: 0; 
-            //     border-left: 5px solid transparent;
-            //     border-right: 5px solid transparent;
-            //     border-top: 5px solid #fff;
-            //     position:absolute;
-            //     bottom:-5px;
-            //     left:40px;
-            // }
-
-
-        
-
-        // &--link:hover span {
-        //     bottom:50px;
-        //     visibility:visible;
-        //     opacity:1;
-        // }
-
-        // &--link:nth-of-type(1):before {
-        //     content:'\f39e';
-        // }
-        // &--link:nth-of-type(2):before {
-        //     content:'\f09a';
-        // }
-        // &--link:nth-of-type(3):before {
-        //     content:'\f09a';
-        // }
-      
 }
 
