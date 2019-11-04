@@ -1,0 +1,142 @@
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background: #341d6c;
+    background-image: radial-gradient(ellipse farthest-corner, #111, #000);
+    position: relative;
+
+    &-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 100vw;
+
+        img {
+            overflow: hidden;
+            height: 95%;
+            width: auto;
+            opacity: .25;
+
+            @media screen and (max-width: 900px) {
+                height: 70%;
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 50%;
+            }
+        }
+    }
+
+    &-nav {
+        // background-color: palegreen;
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+
+        @media screen and (max-width: 992px) {
+            visibility: hidden;
+        }
+
+        &--item {
+            // background-color: palevioletred;
+            display: block;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ddd;
+            transition: all .3s ease-out;
+            
+            &:hover {
+                background-color: #ddd;
+                color: #222;
+            }
+        }
+    }
+
+    &-content {
+        height: 100%;
+
+        .column {
+            &--1 {
+                // background-color: olivedrab;
+                background-color: transparent;
+            }
+
+            // &--2 {
+            //     // background-color: orchid;
+            // }
+            &--2 {
+                // background-color: orchid;
+                background-color: transparent;
+            }
+
+            &--3 {
+                color: #eaeaea;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // background-color: papayawhip;
+
+                @media screen and (max-width: 768px) {
+                    height: auto;
+                }
+           
+            }
+            
+        }
+
+        .logo-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .srijan-logo {
+                // background-color: olivedrab;
+                height: 325px;
+                width: auto;
+
+                @media screen and (max-width: 900px) {
+                    height: 150px;
+                    width: auto;
+                }
+
+                @media screen and (max-width: 600px) {
+                    height: 125px;
+                    width: auto;
+                }
+
+                @media screen and (max-width: 450px) {
+                    height: 100px;
+                    width: auto;
+                }
+
+                &-ju {
+                    // background-color: red;
+                    height: 40px;
+                    width: auto;
+
+                    @media screen and (max-width: 900px) {
+                        height: 35px;
+                        width: auto;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        height: 30px;
+                        width: auto;
+                    }
+    
+                    @media screen and (max-width: 450px) {
+                        height: 25px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
