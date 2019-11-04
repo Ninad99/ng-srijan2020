@@ -5,9 +5,9 @@
     <div class="landing-content row justify-content-center align-items-center p-2 m-0">
         <div class="col-lg-3 col-xl-2 column--1 text-white">
             <ul class="landing-nav p-0">
-                <li class="landing-nav--item m-2 p-2"><span>|</span> Events</li>
-                <li class="landing-nav--item m-2 p-2"><span>|</span> Workshops</li>
-                <li class="landing-nav--item m-2 p-2"><span>|</span> Sponsors</li>
+                <li class="landing-nav--item m-2 p-2" routerLink="/events"><span>|</span> Events</li>
+                <li class="landing-nav--item m-2 p-2" routerLink="/workshops"><span>|</span> Workshops</li>
+                <li class="landing-nav--item m-2 p-2" routerLink="/sponsors"><span>|</span> Sponsors</li>
             </ul>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil quos nobis assumenda velit doloribus cupiditate optio laudantium, eos autem.</p> -->
         </div>
@@ -19,16 +19,22 @@
             </div>
         </div>
         <div class="col-lg-3 col-xl-2 column--3 text-white">
+            <div class="nav-buttons">
+                <button mat-raised-button class="btn btn--1 px-2">One</button>
+                <button mat-raised-button class="btn btn--1 px-2">Two</button>
+            </div>
             <h2>About Srijan</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil quos nobis assumenda velit doloribus cupiditate optio laudantium, eos autem.</p>
                 <br>
                 <br>
             <div class="footer container-fluid mt-3">
-                <a class="footer--link" href="#" target="_blank"><fa-icon id="fb" [icon]="faFacebook"></fa-icon></a>
+                <a class="footer--link" href="#" target="_blank">
+                    <fa-icon id="fb" [icon]="faFacebook"></fa-icon>
+                </a>
                 <a class="footer--link" href="#" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a>
                 <a class="footer--link" href="#" target="_blank"><fa-icon [icon]="faInstagram"></fa-icon></a>
                 <a class="footer--link" href="#" target="_blank"><fa-icon [icon]="faMailBulk"></fa-icon></a>
-                </div>
+            </div>
         </div>
 
         
