@@ -5,15 +5,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { AboutComponent } from './components/about/about.component';
 import { EventsComponent } from './components/events/events.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
 import { TeamComponent } from './components/team/team.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 
@@ -22,10 +23,8 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    AboutComponent,
     EventsComponent,
     WorkshopComponent,
-    GalleryComponent,
     TeamComponent,
     SponsorsComponent
   ],
@@ -35,7 +34,10 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
