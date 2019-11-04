@@ -15,9 +15,17 @@
 
         img {
             overflow: hidden;
-            height: auto;
+            height: 95%;
             width: auto;
             opacity: .25;
+
+            @media screen and (max-width: 900px) {
+                height: 70%;
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 50%;
+            }
         }
     }
 
@@ -26,7 +34,7 @@
 
         .column {
             &--1 {
-                // background-color: olivedrab;
+                background-color: olivedrab;
             }
 
             &--2 {
@@ -34,6 +42,7 @@
             }
 
             &--3 {
+                color: #eaeaea;
                 // background-color: papayawhip;
             }
         }
@@ -47,11 +56,21 @@
 
             .srijan-logo {
                 // background-color: olivedrab;
-                height: 350px;
+                height: 325px;
                 width: auto;
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 900px) {
                     height: 150px;
+                    width: auto;
+                }
+
+                @media screen and (max-width: 600px) {
+                    height: 125px;
+                    width: auto;
+                }
+
+                @media screen and (max-width: 450px) {
+                    height: 100px;
                     width: auto;
                 }
 
@@ -59,6 +78,21 @@
                     // background-color: red;
                     height: 40px;
                     width: auto;
+
+                    @media screen and (max-width: 900px) {
+                        height: 35px;
+                        width: auto;
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        height: 30px;
+                        width: auto;
+                    }
+    
+                    @media screen and (max-width: 450px) {
+                        height: 25px;
+                        width: auto;
+                    }
                 }
             }
         }

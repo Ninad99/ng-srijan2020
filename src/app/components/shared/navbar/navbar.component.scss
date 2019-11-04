@@ -68,7 +68,7 @@ $breakpoint argument choices:
     }
 
     &__button {
-        background-color: $color-white;
+        background-color: transparent;
         height: 3.5rem;
         width: 3.5rem;
         position: fixed;
@@ -178,9 +178,9 @@ $breakpoint argument choices:
         &,
         &::before,
         &::after {
-            width: 1.75rem;
+            width: 1.5rem;
             height: 2px;
-            background-color: $color-grey-dark-3;
+            background-color: $color-white;
             display: inline-block;
         }
 
@@ -192,15 +192,15 @@ $breakpoint argument choices:
             transition: all .2s;
         }
 
-        &::before { top: -.5rem; }
-        &::after { top: .5rem; }
+        &::before { top: -.4rem; }
+        &::after { top: .4rem; }
     }
 
     &__button:hover &__icon::before {
-        top: -.7rem;
+        top: -.5rem;
     }
     &__button:hover &__icon::after {
-        top: .7rem;
+        top: .5rem;
     }
 
     &__checkbox:checked + &__button &__icon {
