@@ -75,6 +75,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 // background-color: purple;
                 position: relative;
 
@@ -104,9 +105,73 @@
                             padding: 1rem;
                         }
                     }
+
+                    @media screen and (max-width: 992px) {
+                        visibility: hidden;
+                    }
+                }
+
+                .footer {
+                    // display: inline-block;
+                    // margin-top: 10px;;
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-start;
+                    position: absolute;
+                    // top:50%;
+                    // margin-top: 10px;
+                    // background-color: olivedrab;
+                    bottom: 0%;
+            
+                    &--link {
+                        color:#fff;
+                        // background; 
+                        // border: solid 1px #fff;
+                        border-radius:4px;
+                        text-align:center;
+                        text-decoration:none;
+                        font-family:fontawesome;
+                        position: relative;
+                        display: inline-block;
+                        font-size: 1.3rem;
+                        width:50px;
+                        height:40px;
+                        padding-top:12px;
+                        margin:0 2px;
+                        backface-visibility: hidden;
+                        -o-transition:all .5s;
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                        transition: all .3s;
+                        -webkit-font-smoothing: antialiased;
+            
+                        @media screen and (max-width: 770px) {
+                            margin-right: 1rem;
+                            height: 35px;
+                            width: auto;
+                        }
+                    }
+            
+                    &--link:nth-of-type(1):hover {
+                        color: #3b5998;
+                        transform: scale(1.15);
+                    }
+            
+                    &--link:nth-child(2):hover {
+                        color: #1da1f2;
+                        transform: scale(1.15);
+                    }
+                    &--link:nth-child(3):hover {
+                        color: #e1306c;
+                        transform: scale(1.15);
+                    }
+                    &--link:nth-child(4):hover {
+                        color: #ffa930;
+                        transform: scale(1.15);
+                    }
+                
                 }
             }
-            
         }
 
         .logo-wrapper {
@@ -161,67 +226,4 @@
     }
 }
 
-.footer {
-    
-        // display: inline-block;
-        // margin-top: 10px;;
-        display: flex;
-        justify-content: flex-start;
-        position:absolute;
-        // top:50%;
-        // margin-top: 10px;
-        bottom: 0%;
-        left:50%;
-        -ms-transform:translate(-50%,-50%);
-        -webkit-transform:translate(-50%,-50%);
-        transform:translate(-50%,-50%);
-
-        &--link {
-            color:#fff;
-            // background; 
-            // border: solid 1px #fff;
-            border-radius:4px;
-            text-align:center;
-            text-decoration:none;
-            font-family:fontawesome;
-            position: relative;
-            display: inline-block;
-            font-size: 1.3rem;
-            width:50px;
-            height:40px;
-            padding-top:12px;
-            margin:0 2px;
-            backface-visibility: hidden;
-            -o-transition:all .5s;
-            -webkit-transition: all .5s;
-            -moz-transition: all .5s;
-            transition: all .3s;
-            -webkit-font-smoothing: antialiased;
-
-            @media screen and (max-width: 770px) {
-                margin-right: 1rem;
-                height: 35px;
-                width: auto;
-            }
-        }
-
-        &--link:nth-of-type(1):hover {
-            color: #3b5998;
-            transform: scale(1.15);
-        }
-
-        &--link:nth-child(2):hover {
-            color: #1da1f2;
-            transform: scale(1.15);
-        }
-        &--link:nth-child(3):hover {
-            color: #e1306c;
-            transform: scale(1.15);
-        }
-        &--link:nth-child(4):hover {
-            color: #ffa930;
-            transform: scale(1.15);
-        }
-
-}
 

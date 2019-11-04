@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-srijan';
-
-  blurBackground() {
-    console.log('background blurred!');
-  }
 }
