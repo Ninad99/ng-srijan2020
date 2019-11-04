@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'workshops', component: WorkshopComponent },
   { path: 'team', component: TeamComponent },
   { path: 'sponsors', component: SponsorsComponent},
-  { path: '', component: LandingComponent },
+  { path: '', component: LandingComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
