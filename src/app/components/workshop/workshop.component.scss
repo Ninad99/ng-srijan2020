@@ -1,0 +1,86 @@
+.workshops {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    &-background {
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+
+        img {
+            overflow: hidden;
+            height: 100%;
+            width: auto;
+            opacity: .95;
+
+            @media screen and (max-width: 992px) {
+                height: 500px;
+                width: auto;
+            }
+
+            @media screen and (max-width: 768px) {
+                opacity: .8;
+            }
+        }
+    }
+    
+    &-content {
+        height: 100vh;
+        width: 100%;
+        background-color: #f8f8f8;
+
+        .column {
+
+            &--1 {
+                background-color: goldenrod;
+            }
+
+            &--2 {
+                // background-color: salmon;
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .workshops-title {
+                    width: 100%;
+                    display: inline-block;
+                    z-index: 99;
+                    font-size: 6rem;
+                    text-align: center;
+
+                    &--1 {
+                        font-weight: 900;
+                        -webkit-text-stroke: 2px black;
+                        color: transparent;
+                        background-color: greenyellow;
+                    }
+
+                    &--2 {
+                        font-weight: 600;
+                        -webkit-text-stroke: 2px black;
+                        color: transparent;
+                        background-color: yellow;
+                    }
+
+                    &--3 {
+                        font-weight: 300;
+                        -webkit-text-stroke: 2px black;
+                        color: transparent;
+                        background-color: gold;
+                    }
+                }
+            }
+
+            &--3 {
+                background-color: seagreen;
+            }
+        }
+    }
+}
