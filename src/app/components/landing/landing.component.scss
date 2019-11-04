@@ -47,6 +47,14 @@
             visibility: hidden;
         }
 
+        .line{
+            font-size: 2rem;
+            font-weight: 900;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+            color: transparent;
+        }
+
+
         &--item {
             // background-color: palevioletred;
             display: block;
@@ -54,11 +62,25 @@
             font-size: 1.5rem;
             color: #ddd;
             transition: all .3s ease-out;
+            font-weight: 900;
+            font-size: 2rem;
+            -webkit-text-stroke: 0.5px rgba(255,255,255,1);
+            color: transparent;
+            margin: 0px;
+            padding: 0px;
             
             &:hover {
-                background-color: #ddd;
-                color: #222;
+                // background-color: #ddd;
+                color: rgba(255,255,255,1);
+                transform: translateX(10%);
+
+                .line{
+                color: rgba(255,255,255,1);
+                -webkit-text-stroke: 1px rgba(0,0,0,1);
+                }
             }
+
+
         }
     }
 
