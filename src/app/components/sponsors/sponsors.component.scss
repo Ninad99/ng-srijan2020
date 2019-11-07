@@ -91,23 +91,55 @@
         }
 
         .logo-wrapper {
+            // background-color: turquoise;
+            height: 100%;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
 
+            @media screen and (max-width: 992px) {
+                justify-content: flex-end;
+            }
+
+            .logo-ju-main {
+                height: 60px;
+                width: 60px;
+
+                @media screen and (max-width: 768px) {
+                    height: 35px;
+                    width: auto;
+                }
+            }
+
+            .fetsu-text {
+                color: transparent;
+                font-size: 1.2rem;
+                text-shadow: rgba(0, 0, 0, .5);
+                transition: all .3s ease-out;
+                -webkit-text-stroke: 1px #AAA;
+
+                @media screen and (max-width: 576px) {
+                    font-size: .75rem;
+                }
+
+                &:hover {
+                    color: #f8f8f8;
+                }
+            }
+
             .srijan-logo {
                 // background-color: olivedrab;
-                height: 325px;
+                height: 275px;
                 width: auto;
 
-                @media screen and (max-width: 900px) {
+                @media screen and (max-width: 992px) {
                     height: 150px;
                     width: auto;
                 }
 
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     height: 125px;
                     width: auto;
                 }
@@ -118,22 +150,22 @@
                 }
 
                 &-ju {
-                    // background-color: red;
-                    height: 40px;
+                    // background-color: olivedrab;
+                    height: 30px;
                     width: auto;
 
                     @media screen and (max-width: 900px) {
-                        height: 35px;
+                        height: 25px;
                         width: auto;
                     }
     
                     @media screen and (max-width: 600px) {
-                        height: 30px;
+                        height: 20px;
                         width: auto;
                     }
     
                     @media screen and (max-width: 450px) {
-                        height: 25px;
+                        height: 15px;
                         width: auto;
                     }
                 }
