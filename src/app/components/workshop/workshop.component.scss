@@ -90,44 +90,6 @@
                 @media screen and (max-width: 992px) {
                     align-items: flex-start;
                 }
-
-                .registration-card {
-                    width: 80%;
-                    box-shadow: 1px 7px 12px rgba(0, 0, 0, .2);
-
-                    @media screen and (max-width: 992px) {
-                        width: 75%;
-                    }
-
-                    @media screen and (max-width: 768px) {
-                        width: 70%;
-                    }
-
-                    @media screen and (max-width: 576px) {
-                        width: 90%;
-                    }
-
-                    mat-card-header {
-                        background-color: #7B1FA2;
-
-                        mat-card-subtitle {
-                            color: #f8f8f8;
-                        }
-                    }
-
-                    &-actions {
-                        width: 100%;
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        padding: .5rem;
-                        // background-color: lightslategrey;
-
-                        button {
-                            background: #4CAF50;
-                        }
-                    }
-                }
             }
         }
     }
