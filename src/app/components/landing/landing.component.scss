@@ -235,6 +235,7 @@
             }
 
             .fetsu-text {
+                text-decoration: none;
                 color: transparent;
                 font-size: 1.2rem;
                 text-shadow: rgba(0, 0, 0, .5);
@@ -247,6 +248,7 @@
 
                 &:hover {
                     color: #f8f8f8;
+                    cursor: pointer;
                 }
             }
 
