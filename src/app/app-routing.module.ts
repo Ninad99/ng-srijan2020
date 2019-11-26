@@ -5,8 +5,10 @@ import { EventsComponent } from './components/events/events.component';
 import { WorkshopComponent } from './components/workshop/workshop.component';
 import { TeamComponent } from './components/team/team.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
 
 const routes: Routes = [
+  { path: 'subscribe', component: SubscribeComponent },
   { path: 'events', component: EventsComponent },
   { path: 'workshops', component: WorkshopComponent },
   { path: 'team', component: TeamComponent },
