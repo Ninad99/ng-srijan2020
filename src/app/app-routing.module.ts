@@ -8,7 +8,7 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 
 const routes: Routes = [
-  { path: 'subscribe', component: SubscribeComponent },
+  { path: 'reconnect', component: SubscribeComponent },
   { path: 'events', component: EventsComponent },
   { path: 'workshops', component: WorkshopComponent },
   { path: 'team', component: TeamComponent },
